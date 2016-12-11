@@ -15,8 +15,8 @@
                                 @endforeach
                             </ul>
                         @endif
-
-                        {!! Form::open(['url' => '/admin/posts', 'class' => 'form-horizontal', 'files' => true]) !!}
+                    
+                        {!! Form::open(['url' => 'posts', 'class' => 'form-horizontal', 'files' => true]) !!}
 
                         @include ('admin.posts.form')
 

@@ -1,0 +1,24 @@
+***** upload image ********
+
+Step 1:
+ "intervention/image": "dev-master" ==> composer.json
+
+Step 2:
+
+  $ composer install
+
+Step 3:
+
+  open the config/app.php file. Add this to the $providers array.
+
+  Intervention\Image\ImageServiceProvider::class,
+
+Step 4:
+
+  Next add this to the $aliases array.
+
+  'Image' => Intervention\Image\Facades\Image::class,
+
+Step 5
+
+  $ php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"

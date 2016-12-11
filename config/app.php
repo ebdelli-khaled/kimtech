@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -229,7 +230,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'HTML' => Collective\Html\HtmlFacade::class,
-
+        'Inspiring' => Illuminate\Foundation\Inspiring::class,
+        'Image' => Intervention\Image\ImageServiceProvider::class,
 
     ],
 

@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-
 class CreatePostsTable extends Migration
 {
     /**
@@ -14,12 +13,15 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function(Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('title');
             $table->text('content');
             $table->string('category');
             $table->timestamps();
+
         });
     }
+
 
     /**
      * Reverse the migrations.

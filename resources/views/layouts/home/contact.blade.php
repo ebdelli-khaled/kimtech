@@ -7,23 +7,23 @@
                 <i class="icon-envelope"></i>
                 <h4>Get in touch</h4>
                 <ul class="list-unstyled">
-                    <li><a href="mailto:support@synero.com">E: support@synero.com</a></li>
-                    <li><a href="tel:0123456789">P: 0123 456 789</a></li>
-                    <li><a href="#">W: www.synero.com</a></li>
+                    <li><a href="mailto:support@synero.com">E: Khaled.ebdelli@esprit.tn</a></li>
+                    <li><a href="tel:0123456789">P: +216 50986839</a></li>
+                    <li><a href="http://www.khaledebdelli.site">W: www.khaledebdelli.site</a></li>
                 </ul>
             </div> <!-- end Get in touch -->
 
             <div class="col-sm-4 margin-b-md">
                 <i class="icon-pointer"></i>
                 <h4>Our Location</h4>
-                <address>CUBANA<br> 123 street <br>Saint Peter, MN 12345<br> 059 – 12345678</address>
+                <address>Aryana<br> hedi meski street <br>2083</address>
             </div> <!-- end Our Location -->
 
             <div class="col-sm-4 margin-b-md">
                 <i class="icon-support"></i>
                 <h4>Free Support</h4>
                 Call Now
-                <a class="support" href="tel:0123456789">12345 67890</a>
+                <a class="support" href="tel:0021650986839">50 986 839</a>
             </div> <!-- end Support -->
         </div> <!-- /row -->
 
@@ -60,7 +60,7 @@
 
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
-                                <p class="text-center con_sub_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren.</p>
+                                <p class="text-center con_sub_text">{{ Inspiring::quote() }}</p>
                             </div> <!-- /col -->
                         </div> <!-- /row -->
 

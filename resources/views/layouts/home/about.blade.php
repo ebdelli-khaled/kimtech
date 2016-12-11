@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h3 class="title">About Us</h3>
-                <p class="slog">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty</p>
+                <p class="slog">I'm a young developer with dynamic and creative spirit, passionated by web development and design.I have a love of clean, elegant styling and solving ambiguous problems and I have an experience in the production of html, CSS AngularJS and NodeJs for modern websites. As an individual, I'm self-confident you will find me creative, funny and naturally passionate. I'm a forward thinker, which others may find inspiring when working as a team.</p>
             </div> <!-- /col -->
         </div> <!-- /row -->
 
@@ -32,35 +32,6 @@
             </div><!-- /col -->
         </div> <!-- /row -->
 
-        <div class="row advanced-about">
-            <div class="col-sm-6 text-left">
-                <h4><b>Responsive Web Design </b></h4>
-                <hr/>
-                <p>Employment respond committed meaningful fight against oppression social challenges rural legal aid governance. Meaningful work, implementation, process cooperation, campaign inspire.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="icon-arrow-right"></i>Consectetur adipisicing elit, sed do eiusmod
-                    </li>
-                    <li>
-                        <i class="icon-arrow-right"></i>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis
-                    </li>
-                    <li>
-                        <i class="icon-arrow-right"></i>Meaningful fight against oppression social challenges rural legal aid governance.
-                    </li>
-                    <li>
-                        <i class="icon-arrow-right"></i>Consectetur adipisicing elit, sed do eiusmod
-                    </li>
-                    <li>
-                        <i class="icon-arrow-right"></i>CUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                    </li>
-                </ul>
-                <a href="#" class="btn btn-custom margin-t-md">Learn More</a>
-            </div> <!-- /col -->
-
-            <div class="col-sm-6 text-center">
-                <img src="img/about-1.png" alt="about" class="img-responsive">
-            </div> <!-- /col -->
-        </div> <!-- /row -->
     </div> <!-- /container -->
 </section>
 <!-- About -->

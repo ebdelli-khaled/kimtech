@@ -15,4 +15,6 @@
 Auth::Routes();
 Route::get('/', 'HomeController@index');
 
-Route::resource('admin/posts', 'Admin\\PostsController');
+Route::resource('/posts', 'Admin\\PostsController');
+Route::get('/file', 'FileuploadController@index');
+Route::post('file', 'FileuploadController@show');

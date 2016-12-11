@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Post;
 use Illuminate\Http\Request;
 use Session;
-
+use Auth;
 class PostsController extends Controller
 {
 
@@ -52,14 +52,14 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $requestData = $request->all();
-        
+        $requestData['user_id'] = Auth::user()->id;
         Post::create($requestData);
 
         Session::flash('flash_message', 'Post added!');
 
-        return redirect('admin/posts');
+        return redirect('posts');
     }
 
     /**
@@ -100,15 +100,15 @@ class PostsController extends Controller
      */
     public function update($id, Request $request)
     {
-        
+
         $requestData = $request->all();
-        
+
         $post = Post::findOrFail($id);
         $post->update($requestData);
 
         Session::flash('flash_message', 'Post updated!');
 
-        return redirect('admin/posts');
+        return redirect('posts');
     }
 
     /**
@@ -124,6 +124,6 @@ class PostsController extends Controller
 
         Session::flash('flash_message', 'Post deleted!');
 
-        return redirect('admin/posts');
+        return redirect('posts');
     }
 }

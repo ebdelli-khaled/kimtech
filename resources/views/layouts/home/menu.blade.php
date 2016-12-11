@@ -21,9 +21,6 @@
                @if(Request::path() == '/')
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
-                <li><a href="#works">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 @endif
                 <!-- Authentication Links -->
@@ -31,25 +28,36 @@
                     <li><a href="{{ url('/login') }}">Login</a></li>
                     <li><a href="{{ url('/register') }}">Register</a></li>
                 @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
+                  <li class="dropdown">
+      <div class="profile-header-container">
+       <div class="profile-header-img">
+               <img class="img-circle" src="{{asset('uploads/'.Auth::user()->id)}}" width="50px"/>
+               <!-- badge -->
+               <div class="rank-label-container">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                     <span class="label label-default rank-label"> {{ Auth::user()->name }}</span>
+                 </a>
 
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="{{ url('/logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
+                 <ul class="dropdown-menu" role="menu">
+                     <li><a href="{{ url('/posts') }}">Posts</a></li>
+                    <li>
+                         <a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                             Logout
+                         </a>
 
-                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
+                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                             {{ csrf_field() }}
+                         </form>
                     </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+
+
+
+                    </li>
+
                 @endif
             </ul>
         </div><!-- /.navbar-collapse -->

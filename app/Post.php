@@ -25,7 +25,20 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'content', 'category'];
+    protected $fillable = ['title', 'content', 'category', 'user_id'];
 
-    
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
+
+    public function setTitleAttribute($value)
+    {
+        $this->attributes['title'] = ucfirst($value);
+    }
+
+    public function user()
+   {
+       return $this->belongsTo('App\User', 'user_id', 'id');
+   }
 }
