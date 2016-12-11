@@ -18,7 +18,7 @@ class FileuploadController extends Controller
       $name = $file->getClientOriginalName();
       $size = $file->getSize();
       $extension = $file->getClientOriginalExtension();
-      $destinationPath = 'uploads'.Auth::user()->id;
+      $destinationPath = 'uploads/uploads'.Auth::user()->id;
       $image_name = Auth::user()->id;
       $file->move($destinationPath, $image_name);
       $image = Image::make(sprintf($destinationPath.'/%s', $image_name))->resize(200, 200)->save();
